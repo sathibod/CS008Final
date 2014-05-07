@@ -1,0 +1,116 @@
+* {
+	font-size: 13pt;  /* sets the font size for all elements. */
+    /* look up reset style sheet */
+}
+
+body{
+	background-color: #200772;
+}
+#main{
+    margin: 3em;
+    text-indent: 3em;
+    background-color: white;
+        
+}
+
+/*header*/
+header h1 {
+	padding: 0.8em 5.33333333%;  /* 48px / 900px */
+        font-size:3.6em;
+        color: red;
+        font-family: courier;
+}
+h2 {
+        font-size: 1.8em;
+        padding: 0em 8.48056537% .2em 8.48056537%;
+        font-family: courier;
+        color: red;
+}
+
+/* Navigtion */
+a:link{
+	background-color: white;
+	border-left: white;
+	border-top: white;
+	border-right: white;
+	color: navy;
+	padding: 1em;
+        font-family: courier;
+}
+nav ol {
+	padding-left: 5.33333333%;  /* 48px / 900px */
+}
+nav ol li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 1em;
+}
+
+/*footer*/
+footer{
+	font-family: courier;
+	color: white;
+}
+/* ---------------------------   media queries ----------------------------- */
+
+            /* laptops, large desktops */
+            @media screen and (min-width:1150px){
+                body {
+                    margin: 10em;
+                }
+            }
+	   @media screen and (max-width:990px){
+		body{
+		    margin:5em;
+		}
+		nav ol li{
+                    display: block;
+                    padding: .5em;
+                }
+				
+			}
+
+            /* ipad and desktop size */
+            @media screen and (max-width:1024px){
+                body {
+                    margin: 5em;
+                }
+            }
+
+            /* ipad portrait */
+            @media screen and (max-width:768px){
+                body {
+                }
+            }
+
+            /* tablets in portrait mode */
+            @media screen and (max-width:600px){
+                
+                nav ol li{
+                    display: block;
+                    padding: .5em;
+                }
+                #main{
+                    width: 100%; /*62.8888889%; /* 566px / 900px */
+                }
+
+                #other{
+                    width: 100%; /*36.7777778%; /* 331px / 900px */
+                }
+            }
+
+            /* mobile device landscape */
+            @media screen and (max-width:480px){
+                body {
+                    margin: 1em;
+                }
+
+
+            }
+
+            /* mobile device portrait */
+            @media screen and (max-width:320px){
+                body {
+                    margin: 1em;
+                }
+            }
