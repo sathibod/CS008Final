@@ -1,17 +1,218 @@
-<? include ("top.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Stats</title>
+<meta charset="utf-8">
+<meta name="author" content="Sierra Thibodeau, Emile Rivat, Cody Pettibone">
+<meta name="description" content="Stats page of Final Project">
 
-<body id="home">
+<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
+<![endif]-->
 
-<article id="main">
+<link rel="stylesheet"
+	  href="style5.css"
+      media="screen">
 
-<h1>Statistics</h1>
+        <style>
+    table, th, td
+    {
+        border: 1px solid black;
+    }
+    </style>
 
-<p><>Mama mihi adulescentem cum venerit sedeo me unicum filium auscultet quae loquor. Et si hoc proderit tibi futurum apricis die. O vestras tempore non vivunt nimias celeritates, mala venient et transibunt. Invenies mulier, scies amor menta filium quis est sursum. Et simplex qualem quaeso aliquid diligis, et intelligite. Baby sit unica qualem o non feceris mihi fili, si potes. Libido oblivisci divitis aurum totum quod est opus in anima tua. Et possis, o Infans sin omnibus cupio tibi, fili, sit satisfactum.</p>
+</head>
+<body id="tables">
+<header>
+	<h1>Statistics for the Red Sox in the 2014 Season </h1>        
+</header><nav>
+     <ol>
+     	<li><a href="main.php">Home</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="gameSchedule.php">Game Schedule</a></li>
+        <li><a href="Roster.php">Roster</a></li>
+        <li><a href="Statistics.php">Statistics</a></li>
+     	<li><a href="form.php">Form</a></li>	
+     </ol>
+</nav>
+   
+    <table>
 
-<p>Et simplex qualem o aliquid diligis, et intelligite. Baby sit unica qualem o non feceris mihi fili, si potes. HEJA ego. Puer, ne solliciti estis, scies corde sequere et nihil aliud. Et possis, o Infans ll sin cupio tibi, fili, sit satisfactum. Et simplex qualem o aliquid diligis, et intelligite. Baby sit unica qualem O uos istud agas fili, si potes. Baby sit simplex, innocens vere o aliquid diligis, et intelligite.</p>
+  <caption>Batting Statistics For Red Sox 2014</caption>
 
-</article>
+<tr>
+    <th>Player</th>
+    <th>Hits</th>
+    <th>Runs</th>
+    <th>Home Runs</th>
+    <th>RBI</th>
+    <th>Batting AVG</th>
+    <th>Games Played</th>
+</tr>
+  <tr>
+    <td>David Ortiz</td>
+    <td>31</td>
+    <td>14</td>
+    <td>6</td>
+    <td>18</td>
+    <td>.258</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td>Dustin Pedroia</td>
+    <td>40</td>
+    <td>22</td>
+    <td>1</td>
+    <td>10</td>
+    <td>.284</td>
+    <td>33</td>
+  </tr>
+    <tr>
+    <td>Mike Napoli</td>
+    <td>33</td>
+    <td>14</td>
+    <td>5</td>
+    <td>16</td>
+    <td>.289</td>
+    <td>32</td>
+  </tr>
+    <tr>
+    <td>A.J. Pierzynski</td>
+    <td>27</td>
+    <td>12</td>
+    <td>3</td>
+    <td>16</td>
+    <td>.287</td>
+    <td>28</td>
+  </tr>
+    <tr>
+    <td>Xander Bogaerts</td>
+    <td>30</td>
+    <td>13</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.268</td>
+    <td>32</td>
+  </tr>
+    <tr>
+    <td>Jackie Bradley Jr.</td>
+    <td>21</td>
+    <td>14</td>
+    <td>0</td>
+    <td>13</td>
+    <td>.210</td>
+    <td>32</td>
+  </tr>
+    <tr>
+    <td>Grady Sizemore</td>
+    <td>22</td>
+    <td>9</td>
+    <td>2</td>
+    <td>11</td>
+    <td>.234</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Jonny Gomes</td>
+    <td>16</td>
+    <td>9</td>
+    <td>3</td>
+    <td>13</td>
+    <td>.225</td>
+    <td>25</td>
+  </tr>
+    <tr>
+    <td>Shane Victorino</td>
+    <td>12</td>
+    <td>4</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.273</td>
+    <td>10</td>
+  </tr>
+    <tr>
+    <td>Mike Carp</td>
+    <td>9</td>
+    <td>5</td>
+    <td>0</td>
+    <td>2</td>
+    <td>.250</td>
+    <td>19</td>
+  </tr>
+</table>
+    <br>
+    
+    <table>
 
+  <caption>Pitching Statistics For Red Sox 2014</caption>
 
-</body>
+<tr>
+    <th>Name</th>
+    <th>IP</th>
+    <th>Wins</th>
+    <th>Saves</th>
+    <th>Losses</th>
+    <th>Strikeouts</th>
+    <th>WHIP</th>
+    <th>ERA</th>
+  </tr>
+  <tr>
+    <td>Jon Lester</td>
+    <td>48.2</td>
+    <td>3</td>
+    <td>0</td>
+    <td>4</td>
+    <td>58</td>
+    <td>1.09</td>
+    <td>2.59</td>
+  </tr>
+  <tr>
+    <td>Koji Uehara</td>
+    <td>14.2</td>
+    <td>0</td>
+    <td>8</td>
+    <td>1</td>
+    <td>22</td>
+    <td>1.09</td>
+    <td>1.23</td>
+  </tr>  <tr>
+    <td>Jake Peavy</td>
+    <td>43.2</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>40</td>
+    <td>1.35</td>
+    <td>3.09</td>
+  </tr>  <tr>
+    <td>John Jackey</td>
+    <td>46.0</td>
+    <td>4</td>
+    <td>0</td>
+    <td>2</td>
+    <td>43</td>
+    <td>1.24</td>
+    <td>3.72</td>
+  </tr>  <tr>
+    <td>Felix Dubront</td>
+    <td>35.1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>3</td>
+    <td>24</td>
+    <td>1.56</td>
+    <td>5.09</td>
+  </tr>  <tr>
+    <td>Clay Buchholz</td>
+    <td>32.0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>2</td>
+    <td>24</td>
+    <td>1.59</td>
+    <td>5.63</td>
+  </tr>
+</table>
+    <br>
+    
 </html>
