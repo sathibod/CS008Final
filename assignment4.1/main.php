@@ -121,9 +121,10 @@ foreach ($images as $img) {
 <article id="main">
     
 <h2>Boston Red Sox</h2>
-<p>Mama mihi adulescentem cum venerit sedeo me unicum filium auscultet quae loquor. Et si hoc proderit tibi futurum apricis die. O vestras tempore non vivunt nimias celeritates, mala venient et transibunt. Invenies mulier, scies amor menta filium quis est sursum. Et simplex qualem quaeso aliquid diligis, et intelligite. Baby sit unica qualem o non feceris mihi fili, si potes. Libido oblivisci divitis aurum totum quod est opus in anima tua. Et possis, o Infans sin omnibus cupio tibi, fili, sit satisfactum.</p>
-
-<p>Et simplex qualem o aliquid diligis, et intelligite. Baby sit unica qualem o non feceris mihi fili, si potes. HEJA ego. Puer, ne solliciti estis, scies corde sequere et nihil aliud. Et possis, o Infans ll sin cupio tibi, fili, sit satisfactum. Et simplex qualem o aliquid diligis, et intelligite. Baby sit unica qualem O uos istud agas fili, si potes. Baby sit simplex, innocens vere o aliquid diligis, et intelligite.</p>
+<p>The Red Sox was founded in 1901 as one the American League’s eight charter franchises. The team competes in the Major League Baseball and are members of the East Division of the American League.  Based in Boston, Massachusetts, Fenway Park has been the home to Red Sox since 1912.  The team’s name was chosen in 1908 by team owner, John I. Taylor. Nicknames include The Sox, the BoSox, The Olde Towne Team.</p>
+<p>The Red Sox have appeared in 12 Worlds Series and have won 8 out of those 12 (1903, 1912, 1915, 1916, 1918, 2004, 2007, 2013), including the first World Series. The team colors include red, midnight navy, and white.</p>
+<p>This web site is for true fans of the Boston Red Sox. Take a look around the website at photos of recent years, the current roster and schedule, look at the statistics, and subscribe to our page to stay up to date with the Boston Red Sox!</p>
+<p>#BostonStrong</p>
 </article>
 
 <? include ("footer.php"); ?>

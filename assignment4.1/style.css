@@ -15,7 +15,7 @@ body{
 
 /*header*/
 header h1 {
-	padding: 0.8em 5.33333333%;  /* 48px / 900px */
+	padding: 0.1em 5.33333333%;  /* 48px / 900px */
         font-size:3.6em;
         color: red;
         font-family: courier;
@@ -34,6 +34,33 @@ a:link{
 	border-top: white;
 	border-right: white;
 	color: navy;
+	padding: 1em;
+        font-family: courier;
+}
+a:visited{
+    background-color: white;
+	border-left: white;
+	border-top: white;
+	border-right: white;
+	color: navy;
+	padding: 1em;
+        font-family: courier;
+}
+a:hover{
+    background-color: red;
+	border-left: red;
+	border-top: red;
+	border-right: red;
+	color: navy;
+	padding: 1em;
+        font-family: courier;
+}
+a:active{
+    background-color: #200772;
+	border-left: red;
+	border-top: red;
+	border-right: red;
+	color: white;
 	padding: 1em;
         font-family: courier;
 }
@@ -114,3 +141,14 @@ footer{
                     margin: 1em;
                 }
             }
+            
+ /*photos*/
+ #photos1{
+    margin-left: 6em;  
+}
+#photos2{
+    margin-left: 6em;  
+}
+#photos3{
+    margin-left: 6em;  
+}  
