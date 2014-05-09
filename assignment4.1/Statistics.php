@@ -24,7 +24,8 @@
 </head>
 <body id="tables">
 <header>
-	<h1>Statistics for the Red Sox in the 2014 Season </h1>        
+	<h1>Statistics for the Red Sox in the 2014 Season </h1>  
+        <p>Welcome to the statistical page for almost all Red Sox players. All statistics are updated as much as we can with accurate and precise measures. </p>
 </header><nav>
      <ol>
      	<li><a href="main.php">Home</a></li>
@@ -215,4 +216,8 @@
 </table>
     <br>
     
+    <p>On this page, we strive for the most recent and accurate statistics with updates that occur daily. Every now and then the hard workers and owners of this site may forget to update this delicate and precious website.
+        But please understand that the lives of our hard working employees do not depend on this site and this is just for a final project! Lastly, we would like to thank you for visiting this website and the statistics page.
+        If you would like to really contribute to our website, please fill out the form on the next page over.
+    </p>
 </html>
