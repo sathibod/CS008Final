@@ -18,9 +18,7 @@
 	  href="style.css"
       media="screen">
 
-<?php
+<?
 include "header.php";
 include "nav.php";
 ?>
-		
-</head>

@@ -34,7 +34,7 @@ $swimming = false;
 $futbol = false;
 $tennis = true;
 
-$yourURL = "https://www.uvm.edu/~sathibod/cs008/assignment4.1/form.php";
+$yourURL = "https://www.uvm.edu/~sathibod/cs008/assignment4.1/form2.php";
 
 //errors
 $fullNameERROR = false;
@@ -198,7 +198,7 @@ if (isset($_POST["btnSubmit"])) {
         $fullNameERROR = true;
     }
     $dataRecord[] = $fullName;
-
+    
     if ($email == "") {
         $errorMsg[] = "Please enter your email address";
         $emailERROR = true;
@@ -207,7 +207,7 @@ if (isset($_POST["btnSubmit"])) {
         $emailERROR = true;
     }
     $dataRecord[] = $email;
-
+    
     //add data to array
     $dataRecord[] = $gender;
     $dataRecord[] = $redSoxGamer;
@@ -230,8 +230,6 @@ if (isset($_POST["btnSubmit"])) {
     $dataRecord[] = $swimming;
     $dataRecord[] = $futbol;
     $dataRecord[] = $tennis;
-
-
 
     // our form data is valid at this point so we can process the data
     if (!$errorMsg) {
@@ -288,7 +286,7 @@ if (isset($_POST["btnSubmit"])) {
 }
 ?>
 
-
+<article id="main">
 <?php
 //*****************************************************************************
 //
@@ -327,25 +325,41 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) {  // closing of if marked 
 
     print '</div>';
     ?>
-    <section id ="form">
-        <form action="<? print $_SERVER['PHP_SELF']; ?>" 
-              method="post" 
-              id="frmRegister">
-            <fieldset class ="wrapper">
-                <legend>Register Today!</legend>
-                <p>please fill out the following survey</p>
+    <aside id="info">
+        <p>Education is important.Education is important. It takes places in all forms and all ages. People learn in school and outside of school. Everyone learns from day one and 
+            continue on learning for the rest of their life whether or not it is through formal education. In the U.S. it is popular for students to start in elementary school then
+            go on to middle school and high school, and if they are driven, on to high education.</p> 
+    <p>The purpose of this survey is to collect data about high school and college age students to see what subjects they enjoy and if they are involved on 
+        campus, and if they are, how they are involved on campus.</p>
+    <p>Please take your time to fill out this survey. All information will remain confidential and will not be connected back to you. And for participating, you will be entered into 
+        a contest to twin a $5 gift card to Dunkin Donuts.</p>
+    <p>Thank you for you time!<p>
+    </aside>
+        <section id ="form">
 
-            <fieldset>               
-                <label for="txtFname" class="required">Enter Your Full Name</label>
-                <input type="text" id="txtFname" name="txtFname" value="" 
-                       tabindex="100" maxlength="25" required placeholder="enter full name" 
-                       autofocus onfocus="this.select()">
-            </fieldset>
+            <form action="<? print $_SERVER['PHP_SELF']; ?>" 
+                  method="post"
+                  id="frmRegister">
+                <fieldset class="wrapper">
+                    <legend>Register Today</legend>
+                    <p>Please fill out the following registration form. <span class='required'></span>.</p>
 
-            <fieldset>               
-                <label for="txtEmail" class="required">Please Enter Your E-mail Address</label>
-                <input type="email" required id="txtEmail" name="txtEmail" value="" tabindex="261" placeholder="E-mail Address"
-                       size="25" maxlength="45"  onfocus="this.select()">
+                    <fieldset class="intro">
+                        <legend>Please complete the following form</legend>
+
+                        <fieldset class="contact">
+                            <legend>Contact Information</legend>
+                            <label for="txtFullName" class="required">Enter Your Full Name</label>
+                            <input type="text" id="txtFullName" name="txtFullName" value="" tabindex="261"
+                                   maxlength="45" onfocus="this.select()" placeholder="Enter your first name" style="width: 25em;">
+                            
+                            <label for="txtEmail" class="required">Email
+                                <input type="email" id="txtEmail" name="txtEmail" 
+                                       value=""
+                                       tabindex="120" maxlength="45" placeholder="enter a valid email address" 
+                                       onfocus="this.select()" required >
+                            </label>
+                        </fieldset>
             </fieldset>
             <fieldset class="radio">
                 <legend>Please Select Your Gender:</legend>
@@ -461,10 +475,11 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) {  // closing of if marked 
     </section>
 
     <?php include ("footer.php"); ?>
-    <?php
-} // end body submit NO CHANGE NEEDED
-if ($debug)
-    print "<p>END OF PROCESSING</p>";
-?>
+        <?php
+    } // end body submit NO CHANGE NEEDED
+    if ($debug)
+        print "<p>END OF PROCESSING</p>";
+    ?>
 </body>
 </html>
+

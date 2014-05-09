@@ -12,7 +12,11 @@ body{
     background-color: white;
         
 }
-
+p{
+	color: white;
+	text-indent: 3em;
+	margin-left: 5em;
+}
 /*header*/
 header h1 {
 	padding: 0.1em 5.33333333%;  /* 48px / 900px */
@@ -30,38 +34,34 @@ h2 {
 /* Navigtion */
 a:link{
 	background-color: white;
-	border-left: white;
-	border-top: white;
-	border-right: white;
 	color: navy;
-	padding: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
         font-family: courier;
 }
 a:visited{
     background-color: white;
-	border-left: white;
-	border-top: white;
-	border-right: white;
 	color: navy;
-	padding: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
         font-family: courier;
 }
 a:hover{
     background-color: red;
-	border-left: red;
-	border-top: red;
-	border-right: red;
 	color: navy;
-	padding: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
         font-family: courier;
 }
 a:active{
     background-color: #200772;
-	border-left: red;
-	border-top: red;
-	border-right: red;
 	color: white;
-	padding: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
         font-family: courier;
 }
 nav ol {
@@ -142,13 +142,113 @@ footer{
                 }
             }
             
- /*photos*/
- #photos1{
-    margin-left: 6em;  
+
+/*form*/
+#form{
+    margin: auto;
+    text-align: left;
+    width: 600px;
+  
+    background-color: white;
 }
-#photos2{
-    margin-left: 6em;  
+
+fieldset{
+    clear: both;
+    border: 1px solid #00498e;
+    
 }
-#photos3{
-    margin-left: 6em;  
-}  
+fieldset.buttons{
+    border: none;
+}
+fieldset.contact{
+    float: left;
+}
+
+fieldset.contact label{
+    display: block;
+    text-align: right
+}
+
+fieldset.contact input{
+    width: 15em;    
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: auto;
+}
+
+fieldset.wrapper legend {
+    color: #00498e;
+    font-weight: bold; 
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+fieldset.wrapper > legend {
+    /* i only want the first legend ie if it follows the class wrapper */
+    font-size: 2em; 
+}
+
+
+/* minor data validation, we would still need to use php to be certain */
+
+fieldset.contact input:valid{
+    border: medium solid mediumorchid;
+}
+
+fieldset.contact input:invalid{
+    border: medium solid red;
+}
+fieldset.contact input.mistake:valid{
+    border: medium solid red;
+}
+
+/***********************************************************************/
+
+label {
+    color: red;
+    font-weight: bold;
+    font-size: .9em; 
+    display: block;
+}
+
+.required {
+    font-weight:bolder;
+    font-style:italic;
+}
+
+label.required:before {
+    content: "* ";
+}
+
+span.required:after {
+    color: #000;
+    content: " Required *";
+}
+
+.mistake {
+    color: #fff;
+    background-color:#800;
+    border: thin solid #000;
+}
+
+#errors ol li{
+    color: #ff5555;
+}
+
+/*tables*/
+table{
+    
+    margin-left: -5em;
+    background-color: white;
+    margin:auto;
+}
+
+table, td {
+     border: 2px solid red;
+}
+
+th, td {
+     text-align: center;
+}

@@ -24,7 +24,7 @@
          if ($path_parts['filename'] == "Statistics") {
              print '<li class="activePage">Statistics</li>';
          } else {
-             print '<li><a href="Statistics.php">Statisitcs</a></li>';
+             print '<li><a href="Statistics.php">Statistics</a></li>';
          }
          if ($path_parts['filename'] == "form") {
              print '<li class="activePage">Form</li>';
