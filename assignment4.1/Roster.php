@@ -1,7 +1,5 @@
 <? include ("top.php"); ?>
 
-<body id="home">
-
 <article id="main">
 
 <h2>Roster</h2>
@@ -15,6 +13,7 @@ most up to date with the current team but we make no promises.</p>
 
 <tr>
     <th scope="col">Pitchers </th>
+    <th scope="col">Number</th>
     
   </tr>
   
@@ -65,6 +64,7 @@ most up to date with the current team but we make no promises.</p>
   
   <tr>
     <th scope="col">Catchers </th>
+    <th scope="col">Number</th>
     
   </tr>
   <tr>
@@ -78,6 +78,7 @@ most up to date with the current team but we make no promises.</p>
   
   <tr>
     <th scope="col">Infielders </th>
+    <th scope="col">Number</th>
     
   </tr>
   
@@ -104,6 +105,7 @@ most up to date with the current team but we make no promises.</p>
   
   <tr>
     <th scope="col">Outfielders </th>
+    <th scope="col">Number</th>
   </tr>
   
    <tr>
@@ -129,6 +131,7 @@ most up to date with the current team but we make no promises.</p>
   
   <tr>
     <th scope="col">Designated Hitter </th>
+    <th scope="col">Number</th>
   </tr>
   
   <tr>
@@ -136,12 +139,9 @@ most up to date with the current team but we make no promises.</p>
     <td>#34</td>
   </tr>
   
-  
-  <tr>
-    <td colspan="5">Just So you know, I will never update this table because no. Sorry! I'm not actually sorry!</td>
-  </tr>
-  
-</table>
+  </table>
+  <p>Just So you know, I will never update this table because no. Sorry! I'm not actually sorry!</p>
+
 
 
 </article>

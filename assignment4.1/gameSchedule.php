@@ -1,11 +1,4 @@
-<<? include ("top.php"); ?>
-
-
-<article id="main">
-    
-    <link rel="stylesheet"
-	  href="style2.css"
-      media="screen">
+<? include ("top.php"); ?>
 
 <h2>Game Schedule</h2>
 
@@ -84,7 +77,6 @@
   </tr>
   
 </table>
-</article>
 
 <? include ("footer.php"); ?>
 </body>

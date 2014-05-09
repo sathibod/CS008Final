@@ -462,11 +462,102 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) {  // closing of if marked 
         </form>  
     </section>
 
-    <?php include ("footer.php"); ?>
+    
+<br>
+<?php
+/* Sample code to open a plain text file and put the data into an array */
+
+$debug = false;
+
+if(isset($_GET["debug"])){
+    $debug = true;
+}
+
+/* Data from: http://www.joespondvermont.com/iceout.php
+ * the data file needs to be in plain text comma seperated, Mac users
+ * sometimes have trouble creating these files
+ * the file looks something like this:
+
+Date, Time
+1988-04-26, 12:31
+1989-05-05, 9:05
+
+*/
+
+$fileExt=".csv";
+
+$myFileName="registration";
+
+$filename = $myFileName . $fileExt;
+
+if ($debug) print "\n\n<p>filename is " . $filename;
+/* have the file in the same folder as this file
+ * be sure permissions are set properly
+ * if it does work then it is the end of line mark in your csv file
+ * check your code with my joe pond sample and see if it works
+ * 
+ */
+
+$file=fopen($filename, "r");
+
+
+/* the variable $file will be empty or false if the file does not open */
+if($file){
+    if($debug) print "<p>File Opened. Begin reading data into an array.</p>\n";
+
+    /* This reads the first row which in our case is the column headers */
+    $headers=fgetcsv($file);
+    
+    /* the while loop keeps exectuing until we reach the end of the file at
+     * which point it stops. the resulting variable $records is an array with
+     * all our data.
+     */
+    while(!feof($file)){
+        $records[]=fgetcsv($file);
+    }
+    
+    //closes the file
+    fclose($file);
+    if($debug) {
+        print "<p>Finished reading. File closed.</p>\n";
+        print "<p>Contents of my array<p><pre> "; print_r($records); print "</pre></p>";
+    }
+} else {
+    if($debug) print "<p>File Opened Failed.</p>\n";
+}
+?>
+<aside id="chart">
+<table>
+
+<tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Been to a Red Sox Game</th>
+    <th>Favorite Player</th>
+    <th>Favorite Position</th>
+    <th>Other Sports</th>
+</tr>
+<?php foreach ($records as $oneRecord):?> 
+<tr>
+     <td><?php echo $oneRecord[0] ?></td>
+     <td><?php echo $oneRecord[1] ?></td>
+     <td><?php echo $oneRecord[2] ?></td>
+     <td><?php echo $oneRecord[3] ?></td>
+     <td><?php echo $oneRecord[4] ?></td>
+     <td><?php echo $oneRecord[5] ?></td>
+     <td><?php echo $oneRecord[6] ?></td>
+</tr>
+<?php endforeach; ?>
+
+</table>
+    </aside>
+<?php include ("footer.php"); ?>
     <?php
 } // end body submit NO CHANGE NEEDED
 if ($debug)
     print "<p>END OF PROCESSING</p>";
 ?>
 </body>
+
 </html>
